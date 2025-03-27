@@ -3318,5 +3318,18 @@
         loadlink();
     }, 10000);
 </script>
-
+<script>
+    document.addEventListener('keydown', function(e) {
+        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.key === 'u')) {
+            e.preventDefault();
+            alert('what are you doing this site has no source code bro 😎😎!');
+        }
+    });
+</script>
+<script>
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        alert('what are you doing this site has no source code bro 😎😎!');
+    });
+</script>
 </body>
